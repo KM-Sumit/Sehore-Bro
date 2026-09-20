@@ -85,11 +85,14 @@ section{padding:85px 0}
 .gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:15px;cursor:pointer}
 
 /* ── CONTACT ── */
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact{display:grid;grid-template-columns:1fr 1.3fr;gap:22px}
 .contactbox{border:1px solid var(--line);padding:28px;border-radius:18px;word-break:break-word}
 .contactbox p{color:var(--muted)}
 .socials{display:flex;gap:10px;flex-wrap:wrap}
 .social{padding:11px 17px;border:1px solid var(--line);border-radius:10px;font-weight:700;background:#fff}
+.contact-form{display:flex;flex-direction:column;gap:12px;margin-top:15px}
+.contact-form input,.contact-form textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:14px}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--o)}
 
 /* ── FOOTER ── */
 footer{border-top:1px solid var(--line);padding:45px 0;background:#fff}
@@ -309,8 +312,20 @@ li{margin:7px 0}
 
 <!-- CONTACT -->
 <div id="contact" class="page"><section class="pagehero"><div class="wrap"><span class="kicker">संपर्क</span><h1>संपर्क करें</h1><p>कार्यालय और सोशल मीडिया से संबंधित जानकारी।</p></div></section><section><div class="wrap contact">
-<div class="contactbox"><h2>Vikas Prince Rathore</h2><p>अध्यक्ष — नगर पालिका परिषद सीहोर</p><p>📍 <b>नगर पालिका कार्यालय, सीहोर (म.प्र.)</b></p></div>
-<div class="contactbox"><h2>जुड़े रहें</h2><p>नवीनतम अपडेट के लिए सोशल मीडिया पर फ़ॉलो करें।</p><div class="socials"><a class="social" href="https://x.com/Princerathore_o" target="_blank">Twitter / X</a></div><hr><p><b>वेबसाइट डेवलपर</b><br>Kapil Sumit<br><b>+91 9516701674</b></p></div>
+<div class="contactbox"><h2>Vikas Prince Rathore</h2><p>अध्यक्ष — नगर पालिका परिषद सीहोर</p><p>📍 <b>नगर पालिका कार्यालय, सीहोर (म.प्र.)</b></p>
+<hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+<h2>जुड़े रहें</h2><p>नवीनतम अपडेट के लिए सोशल मीडिया पर फ़ॉलो करें।</p><div class="socials"><a class="social" href="https://x.com/Princerathore_o" target="_blank">Twitter / X</a></div>
+<hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><p><b>वेबसाइट डेवलपर</b><br>Kapil Sumit<br><b>+91 9516701674</b></p></div>
+<div class="contactbox"><h2>समस्या या सुझाव भेजें</h2><p>अपनी बात हम तक पहुँचाएं।</p>
+<form action="https://formsubmit.co/your-email@gmail.com" method="POST" class="contact-form">
+<input type="text" name="नाम" placeholder="आपका नाम" required>
+<input type="text" name="मोबाइल_नंबर" placeholder="मोबाइल नंबर" required>
+<textarea name="समस्या_या_सुझाव" placeholder="अपनी समस्या या सुझाव लिखें..." rows="4" required></textarea>
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Website Submission">
+<button type="submit" class="btn primary" style="width:100%;margin:0">संदेश भेजें</button>
+</form>
+</div>
 </div></section></div>
 
 </main>
