@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>विकास प्रिंस राठौर | जनसेवा</title>
+<style>
+:root{--o:#df4819;--dark:#241f1c;--muted:#766e68;--bg:#faf8f6;--line:#e9e1dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari","Nirmala UI",sans-serif;color:var(--dark);background:#fff;line-height:1.65}a{text-decoration:none;color:inherit}.wrap{width:min(1200px,calc(100% - 32px));margin:auto}
+header{position:sticky;top:0;z-index:99;background:#fff;border-bottom:1px solid var(--line)}nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{display:flex;gap:10px;align-items:center;font-weight:800}.logo i{width:40px;height:40px;border-radius:12px;background:var(--o);color:#fff;display:grid;place-items:center;font-style:normal}.logo small{display:block;color:#777;font-size:10px;font-weight:500}.navlinks{display:flex;gap:4px}.navlinks a{padding:9px 12px;border-radius:9px;color:#5f5853;font-size:14px}.navlinks a:hover,.navlinks a.active{color:var(--o);background:#fff2ec}.menu{display:none;border:1px solid var(--line);background:white;padding:9px;border-radius:9px}
+.hero{min-height:650px;position:relative;display:flex;align-items:center;background:#31231d;overflow:hidden}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,10,7,.86),rgba(18,10,7,.52),rgba(18,10,7,.12))}.hero .wrap{position:relative;z-index:2;color:#fff}.badge{display:inline-block;background:rgba(223,72,25,.45);padding:7px 13px;border-radius:30px;font-size:13px}.hero h1{font-size:clamp(48px,7vw,82px);line-height:1;margin:22px 0 16px;letter-spacing:-3px}.hero p{max-width:650px;font-size:18px;color:#eee}.pills{display:flex;gap:8px;flex-wrap:wrap}.pill{border:1px solid #ffffff40;background:#ffffff18;padding:6px 12px;border-radius:30px;font-size:12px;font-weight:700}.btn{display:inline-block;padding:12px 20px;border-radius:11px;font-weight:800;font-size:14px;margin:8px 6px 0 0}.primary{background:var(--o);color:#fff}.outline{border:1px solid var(--line);background:#fff;color:var(--o)}
+.stats{border-bottom:1px solid var(--line)}.statsgrid{display:grid;grid-template-columns:repeat(4,1fr)}.stat{text-align:center;padding:28px 10px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;color:var(--o);font-size:40px}.stat span{font-size:13px;color:var(--muted)}
+section{padding:85px 0}.soft{background:var(--bg)}.heading{text-align:center;margin-bottom:42px}.heading small,.kicker{color:var(--o);font-weight:900}.heading h2,.pagehero h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:8px 0}.heading p,.copy p{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.photo{border-radius:25px;overflow:hidden;box-shadow:0 20px 55px #39251b15}.photo img{width:100%;aspect-ratio:4/3;object-fit:cover}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.card:hover{box-shadow:0 15px 45px #3a241814;transform:translateY(-3px);transition:.2s}.card img{width:100%;height:210px;object-fit:cover}.cardbody{padding:20px}.card h3{margin:5px 0;font-size:19px}.card p{color:var(--muted);font-size:14px}.tag{color:var(--o);font-size:11px;font-weight:800}
+.page{display:none}.page.active{display:block}.pagehero{padding:75px 0;background:linear-gradient(135deg,#fff3ed,#fff);border-bottom:1px solid var(--line)}.pagehero p{max-width:700px;color:var(--muted)}
+.timeline{max-width:850px;margin:auto;border-left:2px solid #f0d8cc;padding-left:28px}.time{position:relative;background:#fff;border:1px solid var(--line);padding:20px;border-radius:16px;margin:0 0 20px}.time:before{content:"";position:absolute;left:-39px;top:24px;width:18px;height:18px;background:var(--o);border:4px solid #fff;border-radius:50%}.time small{color:var(--o);font-weight:900}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:15px;cursor:pointer}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contactbox{border:1px solid var(--line);padding:28px;border-radius:18px}.contactbox p{color:var(--muted)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}.social{padding:11px 17px;border:1px solid var(--line);border-radius:10px;font-weight:700;background:#fff}
+footer{border-top:1px solid var(--line);padding:45px 0;background:#fff}.footgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:30px}.footgrid h4{margin-top:0}.footgrid p,.footgrid li{font-size:13px;color:var(--muted)}ul{padding:0;list-style:none}li{margin:7px 0}.bottom{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;display:flex;justify-content:space-between;color:#777;font-size:12px}
+.light{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:200;padding:20px}.light.show{display:flex}.light img{max-width:92%;max-height:88%;border-radius:12px}.close{position:absolute;right:20px;top:20px;border:0;background:#ffffff22;color:#fff;font-size:30px;border-radius:50%;width:45px;height:45px}
+@media(max-width:850px){.navlinks{display:none}.menu{display:block}.navlinks.mobile{display:grid;position:absolute;top:72px;left:0;right:0;background:#fff;padding:12px;border-bottom:1px solid var(--line)}.statsgrid{grid-template-columns:repeat(2,1fr)}.grid2,.contact{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:repeat(2,1fr)}.footgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cards,.footgrid{grid-template-columns:1fr}.hero h1{font-size:45px}.hero p{font-size:15px}.statsgrid{grid-template-columns:1fr 1fr}.stat b{font-size:32px}.bottom{display:block}.bottom span{display:block;margin-top:7px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<nav>
+<a class="logo" href="#home"><i>VR</i><span>Vikas Prince Rathore<small>नगर पालिका अध्यक्ष | सीहोर</small></span></a>
+<div class="navlinks" id="nav">
+<a href="#home">होम</a><a href="#about">परिचय</a><a href="#journey">यात्रा</a><a href="#events">कार्यक्रम</a><a href="#news">समाचार</a><a href="#gallery">यादें</a><a href="#contact">संपर्क</a>
+</div>
+<button class="menu" onclick="toggleMenu()">☰</button>
+</nav>
+</div>
+</header>
+
+<main>
+
+<!-- HOME -->
+<div id="home" class="page active">
+<section class="hero">
+<img src="https://images.unsplash.com/photo-1519419691348-3b3433c4c20e?q=80&w=1600&auto=format&fit=crop" alt="Vikas Prince Rathore">
+<div class="wrap">
+<span class="badge">● ग्रीन सीहोर - क्लीन सीहोर</span>
+<h1>विकास प्रिंस राठौर</h1>
+<div class="pills"><span class="pill">अध्यक्ष — नगर पालिका परिषद सीहोर</span><span class="pill">निर्विरोध पार्षद — वार्ड क्र.15 सीहोर</span><span class="pill">पूर्व अध्यक्ष — भाजपा नगर मंडल सीहोर</span></div>
+<p>भारतीय जनता पार्टी के समर्पित कार्यकर्ता एवं सीहोर नगर पालिका अध्यक्ष। माननीय मुख्यमंत्री जी के नेतृत्व में सीहोर शहर के विकास एवं स्वच्छता को नई ऊंचाई पर ले जाने के लिए संकल्पित।</p>
+<a class="btn primary" href="#journey">यात्रा देखें →</a><a class="btn outline" href="#events">आगामी कार्यक्रम</a>
+</div>
+</section>
+<div class="stats"><div class="wrap statsgrid"><div class="stat"><b>No.1</b><span>स्वच्छता (म.प्र. नगर पालिका)</span></div><div class="stat"><b>6th</b><span>स्वच्छता (देशभर में)</span></div><div class="stat"><b>311 Cr+</b><span>विकास बजट</span></div><div class="stat"><b>100%</b><span>समर्पण जनता के लिए</span></div></div></div>
+
+<section><div class="wrap grid2"><div class="photo"><img src="https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?q=80&w=1200&auto=format&fit=crop"></div><div class="copy"><span class="kicker">परिचय</span><h2>जनता की आवाज़, विकास का संकल्प</h2><p>विकास प्रिंस राठौर जी ने अगस्त 2022 में सीहोर नगर पालिका अध्यक्ष का पदभार ग्रहण किया। उनका मुख्य लक्ष्य "ग्रीन सीहोर - क्लीन सीहोर" अभियान के अंतर्गत शहर को देश में सबसे स्वच्छ और सुंदर बनाना है।</p><p>स्वच्छता सर्वेक्षण 2024-25 में सीहोर को मध्य प्रदेश में पहला और देश में छठवां स्थान प्राप्त हुआ है, जो उनके कुशल नेतृत्व का प्रमाण है।</p><a class="btn outline" href="#about">विकास प्रिंस राठौर के बारे में और जानें →</a></div></div></section>
+
+<section class="soft"><div class="wrap"><div class="heading"><span>उद्देश्य</span><h2>विकास और स्वच्छता का संकल्प</h2><p>वे मूल सिद्धांत जो सीहोर के विकास को गति दे रहे हैं।</p></div><div class="cards"><div class="card"><div class="cardbody"><h3>◎ ग्रीन सीहोर - क्लीन सीहोर</h3><p>रोड स्वीपिंग मशीन और निरंतर सफाई अभियानों के माध्यम से शहर को स्वच्छ बनाना।</p></div></div><div class="card"><div class="cardbody"><h3>♡ ढांचागत विकास</h3><p>वार्डों में सीसी रोड, पुलिया, और पेवर ब्लॉक निर्माण के लिए भूमि पूजन और तेजी से कार्य।</p></div></div><div class="card"><div class="cardbody"><h3>🏆 जनता से जुड़ाव</h3><p>कावड़ यात्रा, रथ यात्रा और विभिन्न धार्मिक आयोजनों में जनता के साथ सहभागिता।</p></div></div></div></div></section>
+
+<section id="eventsPreview"><div class="wrap"><div class="heading"><span>आयोजन</span><h2>कार्यक्रम एवं भूमि पूजन</h2></div><div class="cards"><div class="card"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">7 अप्रैल 2025</span><h3>भाजपा का 46वां स्थापना दिवस</h3><p>वार्ड 15 के बूथ 211, 215, 216 में कार्यकर्ताओं के साथ बैठक और स्थापना दिवस पर चर्चा।</p></div></div><div class="card"><img src="https://images.unsplash.com/photo-1523580494112-071dcb84936a?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">जून-जुलाई 2023</span><h3>विभिन्न वार्डों में विकास कार्य</h3><p>वार्ड 17, 20, 12, 11, और 4 में सीसी रोड, नाली, और पुलिया निर्माण हेतु भूमि पूजन।</p></div></div></div></div></section>
+
+<section class="soft"><div class="wrap"><div class="heading"><span>अपडेट रहें</span><h2>ताज़ा समाचार</h2></div><div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1584824486509-112e4181f1ce?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">SWACHHATA</span><h3>सीहोर को मिला स्वच्छता में मुकाम</h3><p>स्वच्छता सर्वेक्षण 2024-25 में सीहोर नगर पालिका को देश में 6वां और म.प्र. में पहला स्थान।</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1628126235206-5260b9ea6441?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">DEVELOPMENT</span><h3>CM से 50 करोड़ की मांग</h3><p>CM डॉ. मोहन यादव के सीहोर आगमन पर स्वागत और विकास कार्यों के लिए 50 करोड़ की मांग।</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1532375810565-c473f324422e?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">CELEBRATION</span><h3>चंद्रयान-3 सफलता पर जुलूस</h3><p>चंद्रयान-3 की ऐतिहासिक सफलता पर सीहोर में विजय जुलूस और बधाइयाँ।</p></div></div>
+</div></div></section>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="page"><section class="pagehero"><div class="wrap"><span class="kicker">परिचय</span><h1>नगर पालिका अध्यक्ष सीहोर</h1><p>विकास प्रिंस राठौर के सार्वजनिक जीवन और जनसेवा से संबंधित परिचय।</p></div></section><section><div class="wrap grid2"><div class="photo"><img src="https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?q=80&w=1200&auto=format&fit=crop"></div><div class="copy"><span class="kicker">विकास प्रिंस राठौर</span><h2>जनसेवा एवं सीहोर का विकास</h2><p>विकास प्रिंस राठौर सीहोर नगर पालिका परिषद के अध्यक्ष हैं। वे वार्ड क्र. 15 सीहोर से निर्विरोध पार्षद चुने गए थे।</p><p>वे पूर्व में भाजपा नगर मंडल सीहोर के अध्यक्ष और भाजपा युवा मोर्चा सीहोर के जिला अध्यक्ष भी रह चुके हैं। अगस्त 2022 में उन्होंने नगर पालिका अध्यक्ष का पदभार संभाला और तब से लगातार शहर के विकास कार्यों में सक्रिय हैं।</p></div></div></section></div>
+
+<!-- JOURNEY -->
+<div id="journey" class="page"><section class="pagehero"><div class="wrap"><span class="kicker">यात्रा</span><h1>सार्वजनिक जीवन की यात्रा</h1><p>संगठन और जनसेवा में निभाई गई प्रमुख जिम्मेदारियां।</p></div></section><section><div class="wrap timeline">
+<div class="time"><small>वर्तमान जिम्मेदारी (अगस्त 2022 से)</small><h3>अध्यक्ष — नगर पालिका परिषद सीहोर</h3><p>सीहोर शहर के विकास और स्वच्छता को नई दिशा देने का कार्य।</p></div>
+<div class="time"><small>वर्तमान</small><h3>निर्विरोध पार्षद — वार्ड क्र.15 सीहोर</h3><p>अपने वार्ड की जनता के विश्वास का प्रतीक, निर्विरोध निर्वाचन।</p></div>
+<div class="time"><small>पूर्व जिम्मेदारी</small><h3>पूर्व अध्यक्ष — भाजपा नगर मंडल सीहोर</h3><p>पार्टी संगठन को मजबूती प्रदान करने में अहम भूमिका।</p></div>
+<div class="time"><small>पूर्व जिम्मेदारी</small><h3>पूर्व जिला अध्यक्ष — भाजपा युवा मोर्चा सीहोर</h3><p>युवाओं को संगठित कर पार्टी विचारधारा को आगे बढ़ाने का कार्य।</p></div>
+</div></section></div>
+
+<!-- EVENTS -->
+<div id="events" class="page"><section class="pagehero"><div class="wrap"><span class="kicker">कार्यक्रम</span><h1>कार्यक्रम और आयोजन</h1><p>प्रमुख विकास कार्य और जन-सहभागिता के कार्यक्रम।</p></div></section><section><div class="wrap cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">7 अप्रैल 2025</span><h3>भाजपा स्थापना दिवस</h3><p>वार्ड 15 के विभिन्न बूथों में कार्यकर्ताओं के साथ स्थापना दिवस पर महत्वपूर्ण बैठक।</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1523580494112-071dcb84936a?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">जून-जुलाई 2023</span><h3>वार्डों में विकास कार्यों का भूमि पूजन</h3><p>वार्ड 4, 11, 12, 15, 17, 18, 20 में सीसी रोड, नाली, पुलिया, पेवर ब्लॉक आदि के निर्माण कार्यों का शुभारंभ।</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">20 जून 2023</span><h3>भगवान श्री जगन्नाथ रथ यात्रा</h3><p>रथ यात्रा का स्वागत, यात्रा के पीछे सफाई अभियान, और भंडारे की व्यवस्था।</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1628126235206-5260b9ea6441?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">अगस्त 2022</span><h3>बाढ़ राहत शिविर व्यवस्था</h3><p>आपदा के समय जनता की सेवा के लिए बाढ़ राहत शिविरों का आयोजन और व्यवस्था।</p></div></div>
+</div></section></div>
+
+<!-- NEWS -->
+<div id="news" class="page"><section class="pagehero"><div class="wrap"><span class="kicker">समाचार</span><h1>ताज़ा समाचार</h1><p>उपलब्ध समाचार और प्रेस सामग्री का संग्रह।</p></div></section><section><div class="wrap cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1584824486509-112e4181f1ce?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">PRESS</span><h3>सीहोर को मिला स्वच्छता में 6ठा स्थान</h3><p>स्वच्छता सर्वेक्षण 2024-25 में सीहोर नगर पालिका को देश में 6वां और म.प्र. में प्रथम स्थान प्राप्त हुआ। प्रेसवार्ता में नंबर 1 बनने का लक्ष्य रखा गया।</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1532375810565-c473f324422e?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">PRESS</span><h3>CM के आगमन पर 50 करोड़ का ज्ञापन</h3><p>मुख्यमंत्री डॉ. मोहन यादव के सीहोर आगमन पर स्वागत किया गया और शहर के विकास हेतु 50 करोड़ की मांग रखी गई।</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1628126235206-5260b9ea6441?q=80&w=800&auto=format&fit=crop"><div class="cardbody"><span class="tag">PRESS</span><h3>स्वच्छता समीक्षा बैठक और अभियान</h3><p>रोड स्वीपिंग मशीन से सड़क सफाई और "ग्रीन सीहोर-क्लीन सीहोर" के तहत निरंतर निरीक्षण।</p></div></div>
+</div></section></div>
+
+<!-- GALLERY -->
+<div id="gallery" class="page"><section class="pagehero"><div class="wrap"><span class="kicker">गैलरी</span><h1>यादगार पल</h1><p>सामुदायिक पहलों, कार्यक्रमों और विकास कार्यों की एक झलक।</p></div></section><section><div class="wrap gallery">
+<img onclick="openImg(this.src)" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop">
+<img onclick="openImg(this.src)" src="https://images.unsplash.com/photo-1523580494112-071dcb84936a?q=80&w=800&auto=format&fit=crop">
+<img onclick="openImg(this.src)" src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=800&auto=format&fit=crop">
+<img onclick="openImg(this.src)" src="https://images.unsplash.com/photo-1584824486509-112e4181f1ce?q=80&w=800&auto=format&fit=crop">
+<img onclick="openImg(this.src)" src="https://images.unsplash.com/photo-1532375810565-c473f324422e?q=80&w=800&auto=format&fit=crop">
+<img onclick="openImg(this.src)" src="https://images.unsplash.com/photo-1628126235206-5260b9ea6441?q=80&w=800&auto=format&fit=crop">
+</div></section></div>
+
+<!-- CONTACT -->
+<div id="contact" class="page"><section class="pagehero"><div class="wrap"><span class="kicker">संपर्क</span><h1>संपर्क करें</h1><p>कार्यालय और सोशल मीडिया से संबंधित जानकारी।</p></div></section><section><div class="wrap contact">
+<div class="contactbox"><h2>Vikas Prince Rathore</h2><p>अध्यक्ष — नगर पालिका परिषद सीहोर</p><p>📍 <b>नगर पालिका कार्यालय, सीहोर (म.प्र.)</b></p></div>
+<div class="contactbox"><h2>जुड़े रहें</h2><p>नवीनतम अपडेट के लिए सोशल मीडिया पर फ़ॉलो करें।</p><div class="socials"><a class="social" href="https://x.com/Princerathore_o" target="_blank">Twitter / X</a></div><hr><p><b>वेबसाइट डेवलपर</b><br>Satyanarayan Chouhan<br><b>+91 93020 44230</b></p></div>
+</div></section></div>
+
+</main>
+
+<footer>
+<div class="wrap footgrid"><div><div class="logo"><i>VR</i><span>Vikas Prince Rathore<small>नगर पालिका अध्यक्ष | सीहोर</small></span></div><p>सीहोर शहर के विकास एवं स्वच्छता के लिए समर्पित।</p></div>
+<div><h4>त्वरित लिंक</h4><ul><li><a href="#about">परिचय</a></li><li><a href="#journey">यात्रा</a></li><li><a href="#events">कार्यक्रम</a></li><li><a href="#gallery">यादें</a></li><li><a href="#news">समाचार</a></li></ul></div>
+<div><h4>संसाधन</h4><ul><li><a href="#events">कार्यक्रम</a></li><li><a href="#contact">संपर्क</a></li></ul></div>
+<div><h4>संपर्क</h4><p>नगर पालिका परिषद, सीहोर</p></div></div>
+<div class="wrap bottom"><span>© <span id="year"></span> Vikas Prince Rathore Digital Platform.</span><span>जनता की सेवा के लिए निर्मित।</span></div>
+</footer>
+
+<div class="light" id="light" onclick="closeImg()"><button class="close">×</button><img id="lightImg"></div>
+
+<script>
+const pages=[...document.querySelectorAll('.page')];
+const links=[...document.querySelectorAll('.navlinks a')];
+
+function showPage(){
+ let id=location.hash.replace('#','')||'home';
+ if(!document.getElementById(id))id='home';
+ pages.forEach(p=>p.classList.toggle('active',p.id===id));
+ links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));
+ window.scrollTo({top:0,behavior:'smooth'});
+ document.getElementById('nav').classList.remove('mobile');
+}
+window.addEventListener('hashchange',showPage);
+showPage();
+
+function toggleMenu(){document.getElementById('nav').classList.toggle('mobile')}
+function openImg(src){document.getElementById('lightImg').src=src;document.getElementById('light').classList.add('show')}
+function closeImg(){document.getElementById('light').classList.remove('show')}
+document.getElementById('year').textContent=new Date().getFullYear();
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeImg()});
+</script>
+</body>
+</html>
