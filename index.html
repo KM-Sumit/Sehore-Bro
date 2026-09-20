@@ -149,14 +149,15 @@ li{margin:7px 0}
   .navlinks.mobile{top:60px}
   
   /* Hero */
-  .hero{min-height:auto;padding:80px 0 50px}
-  .hero:after{background:linear-gradient(180deg,rgba(18,10,7,.9) 0%,rgba(18,10,7,.7) 50%,rgba(18,10,7,.5) 100%)}
+  .hero{min-height:auto;padding:70px 0 60px}
+  .hero>img{object-position: 70% center}
+  .hero:after{background:linear-gradient(90deg,rgba(18,10,7,.95) 0%,rgba(18,10,7,.75) 50%,rgba(18,10,7,.1) 100%)}
   .hero h1{font-size:clamp(30px,10vw,45px);letter-spacing:-1px;margin:14px 0 12px}
   .hero p{font-size:14px;line-height:1.6}
   .badge{font-size:11px;padding:5px 10px}
-  .pill{font-size:10px;padding:5px 9px}
-  .pills{gap:6px}
-  .btn{padding:11px 18px;font-size:13px;margin:6px 4px 0 0}
+  .pills{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+  .pill{font-size:11px;padding:5px 10px}
+  .btn{padding:12px 18px;font-size:13px;margin:6px 6px 0 0;width:auto}
   
   /* Stats */
   .statsgrid{grid-template-columns:1fr 1fr}
